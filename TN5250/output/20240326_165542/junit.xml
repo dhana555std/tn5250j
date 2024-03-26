@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="20240326_165542" timestamp="2024-03-26T16:55:43" time="26.212" tests="20" errors="1">
+  <testsuite id="1" name="TN5250" package="TN5250" hostname="ALIPL3204" timestamp="2024-03-26T16:55:45" time="23.183" tests="20" errors="1">
+    <properties>
+      <property name="Run From" value="ALIPL3204" />
+      <property name="Run OS" value="amd64 Windows 11 10.0" />
+      <property name="Run User" value="al5171" />
+      <property name="Iteration" value="1 of 1" />
+      <property name="Script" value="TN5250.xlsx" />
+      <property name="Logs" value="F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log" />
+      <property name="pub400.inspection.log" value="F:\Projects\TN5250\output\20240326_165542\logs\pub400.inspection.log" />
+      <property name="Data File" value="TN5250.data.xlsx" />
+      <property name="DataSheet(s)" value="#default" />
+      <property name="runtime args" value="-script F:\Projects\TN5250\artifact\script\TN5250.xlsx" />
+    </properties>
+    <testcase id="StartRecording" name="StartRecording" classname="init" timestamp="2024-03-26T16:55:47" time="20.691">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx
+Logs  : F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log</system-out>
+    </testcase>
+    <testcase id="Login" name="Login" classname="PUB400" timestamp="2024-03-26T16:55:49" time="19.058">
+      <system-out>Total : 9
+Passed: 9
+Failed: 0
+Output: F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx
+Logs  : F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log</system-out>
+    </testcase>
+    <testcase id="Post-login" name="Post-login" classname="PUB400" timestamp="2024-03-26T16:56:01" time="6.926">
+      <failure type="failure found in test activity" message="1 of 8 FAILED. Check F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx for execution result, F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log for execution logs" />
+      <system-out>Total : 8
+Passed: 7
+Failed: 1
+Output: F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx
+Logs  : F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log</system-out>
+    </testcase>
+    <testcase id="CloseProfile" name="CloseProfile" classname="teardown" timestamp="2024-03-26T16:56:08" time="0.141">
+      <system-out>Total : 1
+Passed: 0
+Failed: 0
+Output: F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx
+Logs  : F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log</system-out>
+    </testcase>
+    <testcase id="StopRecording" name="StopRecording" classname="teardown" timestamp="2024-03-26T16:56:08" time="0.126">
+      <system-out>Total : 1
+Passed: 0
+Failed: 0
+Output: F:\Projects\TN5250\output\20240326_165542\TN5250.20240326_165545.001.xlsx
+Logs  : F:\Projects\TN5250\output\20240326_165542\logs\nexial-20240326_165542.log</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,130 @@
+/-[2024-03-26 16:55:54.727]----------------------------------------------------\
+| [TN5250.20240326_165545.001.xlsx][PUB400][Login][STEP   5][tn.5250][open(profile)] |
+\------------------------------------------------------------------------------/
+
+................................................................................
+::                               ~~~ SCREEN ~~~                               ::
+................................................................................
+        Welcome to PUB400.COM * your public IBM i server                       
+                                              Server name . . . :   PUB400     
+                                              Subsystem . . . . :   QINTER2    
+                                              Display name. . . :   PUB400.RZK 
+Your user name:                                                                 
+Password (max. 128):                                                            
+                                                                               
+                                                                               
+-=* WELCOME TO IBM i 7.5 *=-                                                    
+                                                                               
+* Did you know we host some free product demos? Simply enter                    
+  FASTBREED/ALL400S   - after logon to PUB400                                  
+* Please do not put objects into QGPL library - will be cleaned up              
+                                                                               
+* Keep in mind: IPL of system each sunday 0900 UTC                              
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+- Check out https://pub400.com for news, tools, chat, forum                     
+connect with SSH to port 2222 -> ssh name§pub400.com -p 2222                    
+                                                                               
+                                                                               
+                                       (C) COPYRIGHT IBM CORP. 1980, 2021.     
+................................................................................
+::                               ~~~ TITLE ~~~                                ::
+................................................................................
+
+................................................................................
+::                              ~~~ MESSAGE ~~~                               ::
+................................................................................
+(C) COPYRIGHT IBM CORP. 1980, 2021.
+
+
+
+/-[2024-03-26 16:55:56.882]----------------------------------------------------\
+| [TN5250.20240326_165545.001.xlsx][PUB400][Login][STEP   6][tn.5250][inspectScreen()] |
+\------------------------------------------------------------------------------/
+
+................................................................................
+::                               ~~~ SCREEN ~~~                               ::
+................................................................................
+        Welcome to PUB400.COM * your public IBM i server                       
+                                              Server name . . . :   PUB400     
+                                              Subsystem . . . . :   QINTER2    
+                                              Display name. . . :   PUB400.RZK 
+Your user name:                                                                 
+Password (max. 128):                                                            
+                                                                               
+                                                                               
+-=* WELCOME TO IBM i 7.5 *=-                                                    
+                                                                               
+* Did you know we host some free product demos? Simply enter                    
+  FASTBREED/ALL400S   - after logon to PUB400                                  
+* Please do not put objects into QGPL library - will be cleaned up              
+                                                                               
+* Keep in mind: IPL of system each sunday 0900 UTC                              
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+- Check out https://pub400.com for news, tools, chat, forum                     
+connect with SSH to port 2222 -> ssh name§pub400.com -p 2222                    
+                                                                               
+                                                                               
+                                       (C) COPYRIGHT IBM CORP. 1980, 2021.     
+................................................................................
+::                               ~~~ TITLE ~~~                                ::
+................................................................................
+
+................................................................................
+::                              ~~~ MESSAGE ~~~                               ::
+................................................................................
+(C) COPYRIGHT IBM CORP. 1980, 2021.
+
+
+
+/-[2024-03-26 16:56:03.642]----------------------------------------------------\
+| [TN5250.20240326_165545.001.xlsx][PUB400][Post-login][STEP  14][tn.5250][inspectScreen()] |
+\------------------------------------------------------------------------------/
+
+................................................................................
+::                               ~~~ SCREEN ~~~                               ::
+................................................................................
+MAIN                           IBM i Main Menu                                 
+                                                            System:   PUB400   
+Select one of the following:                                                   
+                                                                               
+     1. User tasks                                                             
+     2. Office tasks                                                           
+     3. General system tasks                                                   
+     4. Files, libraries, and folders                                          
+     5. Programming                                                            
+     6. Communications                                                         
+     7. Define or change the system                                            
+     8. Problem handling                                                       
+     9. Display a menu                                                         
+    10. Information Assistant options                                          
+    11. IBM i Access tasks                                                     
+                                                                               
+    90. Sign off                                                               
+                                                                               
+Selection or command                                                           
+===>                                                                           
+                                                                               
+F3=Exit   F4=Prompt   F9=Retrieve   F12=Cancel   F13=Information Assistant     
+F23=Set initial menu                                                           
+(C) COPYRIGHT IBM CORP. 1980, 2021.                                            
+................................................................................
+::                               ~~~ TITLE ~~~                                ::
+................................................................................
+IBM i Main Menu
+................................................................................
+::                           ~~~ DISPLAY FIELDS ~~~                           ::
+................................................................................
+ > System                           : PUB400
+................................................................................
+::                              ~~~ MESSAGE ~~~                               ::
+................................................................................
+(C) COPYRIGHT IBM CORP. 1980, 2021.
+
+
+
