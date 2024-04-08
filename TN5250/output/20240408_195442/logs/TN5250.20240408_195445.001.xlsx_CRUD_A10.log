@@ -1,0 +1,7 @@
+Nexial Version:    nexial-core dev_0000
+Current Timestamp: 2024-04-08 19:55:21.351
+Test Step:         [TN5250.20240408_195445.001.xlsx][CRUD][mainScreen][STEP  10][base][assertEqual(expected,actual)]
+--------------------------------------------------------------------------------
+
+expected=PUB400
+actual  =<empty>

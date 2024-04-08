@@ -1,0 +1,24 @@
+                                 Display Report                                  
+Query . . . :   RIYA1/SELSTU                 Report width . . . . . :      80   
+Position to line  . . . . .              Shift to column  . . . . . .           
+Line   ....+....1....+....2....+....3....+....4....+....5....+....6....+....7.. 
+       STUDENT ID  STUDENT NAME  COLLEGE NAME  COLLEGE URL                      
+000001        1     Harika          JNTU       https://jntuh.ac.in/             
+000002        2     Shiva           KITS       https://nagpuruniversity.ac.in/  
+000003        3     Priya           KITS       https://nagpuruniversity.ac.in/  
+****** ********  End of report  ********                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      Bottom    
+F3=Exit      F12=Cancel      F19=Left      F20=Right      F21=Split             
+                                                                               

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="20240408_195442" timestamp="2024-04-08T19:54:43" time="171.718" tests="112" errors="3">
+  <testsuite id="1" name="TN5250" package="TN5250" hostname="ALIPL3204" timestamp="2024-04-08T19:54:45" time="168.767" tests="112" errors="3">
+    <properties>
+      <property name="Run From" value="ALIPL3204" />
+      <property name="Run OS" value="amd64 Windows 11 10.0" />
+      <property name="Run User" value="AL5171" />
+      <property name="Iteration" value="1 of 1" />
+      <property name="Script" value="TN5250.xlsx" />
+      <property name="TN5250.20240408_195445.001.xlsx_CRUD_A10.log" value="F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\TN5250.20240408_195445.001.xlsx_CRUD_A10.log" />
+      <property name="Logs" value="F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log" />
+      <property name="pub400.inspection.log" value="F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\pub400.inspection.log" />
+      <property name="Data File" value="TN5250.data.xlsx" />
+      <property name="DataSheet(s)" value="#default" />
+      <property name="runtime args" value="-script F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx" />
+    </properties>
+    <testcase id="startRecording" name="startRecording" classname="init" timestamp="2024-04-08T19:54:48" time="166.064">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="openProfile" name="openProfile" classname="connectAndLogin" timestamp="2024-04-08T19:54:52" time="162.386">
+      <system-out>Total : 5
+Passed: 5
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="login" name="login" classname="connectAndLogin" timestamp="2024-04-08T19:55:07" time="147.081">
+      <system-out>Total : 5
+Passed: 5
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="mainScreen" name="mainScreen" classname="CRUD" timestamp="2024-04-08T19:55:10" time="143.530">
+      <failure type="failure found in test activity" message="3 of 10 FAILED. Check F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx for execution result, F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log for execution logs" />
+      <system-out>Total : 10
+Passed: 7
+Failed: 3
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="listOfStudents" name="listOfStudents" classname="CRUD" timestamp="2024-04-08T19:55:30" time="123.969">
+      <system-out>Total : 6
+Passed: 6
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="switchToBrowser" name="switchToBrowser" classname="CRUD" timestamp="2024-04-08T19:55:44" time="110.159">
+      <system-out>Total : 8
+Passed: 8
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="addStudent" name="addStudent" classname="CRUD" timestamp="2024-04-08T19:56:04" time="89.520">
+      <system-out>Total : 11
+Passed: 11
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="updateStudentRecord" name="updateStudentRecord" classname="CRUD" timestamp="2024-04-08T19:56:23" time="71.121">
+      <system-out>Total : 7
+Passed: 7
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="deleteRecord" name="deleteRecord" classname="CRUD" timestamp="2024-04-08T19:56:37" time="56.743">
+      <system-out>Total : 10
+Passed: 10
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="navigateMenuScreen" name="navigateMenuScreen" classname="NavigateMenuScreens" timestamp="2024-04-08T19:56:50" time="43.537">
+      <system-out>Total : 10
+Passed: 10
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="saveDataAsCsv" name="saveDataAsCsv" classname="NavigateMenuScreens" timestamp="2024-04-08T19:57:03" time="31.195">
+      <system-out>Total : 6
+Passed: 6
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="addStudent" name="addStudent" classname="NavigateMenuScreens" timestamp="2024-04-08T19:57:07" time="27.305">
+      <system-out>Total : 12
+Passed: 12
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="updateStudent" name="updateStudent" classname="NavigateMenuScreens" timestamp="2024-04-08T19:57:16" time="18.185">
+      <system-out>Total : 12
+Passed: 12
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="deleteStudent" name="deleteStudent" classname="NavigateMenuScreens" timestamp="2024-04-08T19:57:25" time="9.059">
+      <system-out>Total : 7
+Passed: 7
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="CloseProfile" name="CloseProfile" classname="teardown" timestamp="2024-04-08T19:57:31" time="2.972">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+    <testcase id="StopRecording" name="StopRecording" classname="teardown" timestamp="2024-04-08T19:57:32" time="2.193">
+      <system-out>Total : 1
+Passed: 1
+Failed: 0
+Output: F:\Projects\tn5250j\TN5250\output\20240408_195442\TN5250.20240408_195445.001.xlsx
+Logs  : F:\Projects\tn5250j\TN5250\output\20240408_195442\logs\nexial-20240408_195442.log</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

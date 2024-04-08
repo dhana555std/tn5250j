@@ -1,0 +1,985 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script>
+        var loadErrorFound = false;
+        function externalResourceNotFound() {
+            if (!loadErrorFound) {
+                window.alert("Unable to load one or more external web resources needed to display this page.\n\n" +
+                             "Please check/adjust your Internet access and reload this page again.\n\n" +
+                             "Thank you.");
+                loadErrorFound = true;
+            }
+            return false;
+        }
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" onerror="externalResourceNotFound()"/>
+    <link rel="stylesheet" href="https://nexiality.github.io/documentation/assets/report/execution_summary.css" onerror="externalResourceNotFound()"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://nexiality.github.io/documentation/assets/report/execution_summary.js" onerror="externalResourceNotFound()"></script>
+    <script src="https://nexiality.github.io/documentation/assets/report/execution_output.js" onerror="externalResourceNotFound()"></script>
+</head>
+<body>
+<div class="title">
+    Execution Summary for <span>20240408_194708</span>
+</div>
+
+<div class="result-controls">
+    <i class="fas fa-toggle-on on" id="script-toggle" onclick="toggleScript(this)" title="toggle the display of only scripts"><span>Scripts</span></i>
+    <i class="fas fa-toggle-on on" id="iteration-toggle" onclick="toggleIteration(this)" title="toggle the display of iterations"><span>Iterations</span></i>
+    <i class="fas fa-toggle-on on" id="scenario-toggle" onclick="toggleScenario(this)" title="toggle the display of scenarios"><span>Scenarios</span></i>
+    <i class="fas fa-toggle-on on" id="activity-toggle" onclick="toggleActivity(this)" title="toggle the display of activities"><span>Activities</span></i>
+    <i class="fas fa-toggle-on on" id="reference-toggle" onclick="toggleRefs(this);" title="toggle the display of script/scenario references"><span>References</span></i>
+    <i class="fas fa-toggle-on on" id="timing-toggle" onclick="toggleTimings(this);" title="toggle the display of execution time"><span>Timing</span></i>
+    <i class="fas fa-toggle-on on" id="passfail-toggle" onclick="togglePassFail(this);" title="toggle the display of PASS/FAIL"><span>PASS/FAIL</span></i>
+    &nbsp;|&nbsp;&nbsp;
+    <i class="fas fa-exclamation-circle off" id="failure-toggle" onclick="collapsePassRows(this);"><span>Failures</span></i>
+    <i class="fas fa-check-circle on" id="all-toggle" onclick="showPassRows(this);"><span>All Results</span></i>
+    &nbsp;|&nbsp;&nbsp;
+    <i class="fas fa-compress on" id="collapse-toggle" onclick="toggleExpansion(this)" title="collapse/expand all sections"><span>Collapse/Expand All</span></i>
+</div>
+
+
+    <div class="custom-header"><div class="wrapper" style="margin: 15px;min-height:30%;overflow: auto; background-color:white;border-radius: 15px;">
+  <div class="row" style=" display: flex;flex-direction: row;flex-wrap: wrap;width: 100%; height: 120px;">
+    <div class="column" style="display: flex;flex-direction: column;flex-basis: 100%;flex: 1;">
+      <div style="height: 100px;margin-top: 25px;margin-right: 25px;/* border-radius: 15px; */">
+        <img src=F:\Projects\tn5250j\TN5250\artifact\data\prudentials.jpg alt="datalink" width="200">
+      </div>
+    </div>
+    <div class="column" style="display: flex;flex-direction: column;flex-basis: 100%;flex: 4;">
+      <div style="height: 100px;/* padding: 0px; */">
+        <p <="" style="font-size: 28px;font-weight: bold;color:rgb(237, 27, 46);">Prudentials </p>
+        <div class="columns" style="display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;color:rgb(237, 27, 46);">
+          <div class="column" style="flex: 50%;">
+            <h2>
+              <p style="font-size: 20px">For every chapter of your life
+                Let us help you find the right solutions to take care of what’s important to you and your family. </p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.custom-header').css('background-color', 'white')
+  </script>
+</div></div>
+
+
+<div class="execMeta canHide">
+    <div class="showhide" target="execMeta">
+        <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+        <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+    </div>
+
+    <div id="execMeta" class="parent">
+        <div class="meta">
+            <table class="execMeta" cellpadding="0" cellspacing="0" style="width: 100%">
+                <tbody>
+                    <tr>
+                        <td class="section-header section-env" width="10%"><i class="fas fa-laptop-code"></i></td>
+                        <td class="section-detail detail-env">
+                            <div class="execValue">
+                                <div class="execLabel">run from</div>
+                                <div class="content" style="text-align:left; margin-top:-5px;">ALIPL3204 (amd64 Windows 11 10.0)
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">run user</div>
+                                <div class="content">AL5171
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">nexial version</div>
+                                <div class="content">nexial-core dev_0000</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">java version</div>
+                                <div class="content">17.0.10</div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" class="section-header section-time"><i class="fas fa-clock"></i></td>
+                        <td class="section-detail detail-time">
+                            <div class="execValue">
+                                <div class="execLabel">starts on</div>
+                                <div class="content">04/08/2024 19:47:09
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">ends on</div>
+                                <div class="content">04/08/2024 19:49:45
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">duration</div>
+                                <div class="content">00:02:36.364
+</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="section-header section-exec"><i class="fas fa-cogs"></i></td>
+                        <td class="section-detail detail-exec">
+                            <div class="execValue">
+                                <div class="execLabel">Scenario Passed</div>
+                                <div class="content">4 / 5
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">Total Steps</div>
+                                <div class="content">  112
+</div>
+                            </div>
+                            <div class="execValue">
+                                <div class="execLabel">Executed Steps</div>
+                                <div class="content">112 (100.00%)
+</div>
+                            </div>
+                            <div class="execValue execValuePass">
+                                <div class="execLabel">Passed</div>
+                                <div class="content">111 (99.11%)
+</div>
+                            </div>
+                            <div class="execValue execValueFail">
+                                <div class="execLabel">Failed</div>
+                                <div class="content">1 (0.89%)
+</div>
+                            </div>
+                            <div class="execValue execValueSkipped">
+                                <div class="execLabel">Skipped</div>
+                                <div class="content">0 (0.00%)
+</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="section-header section-ref"><i class="fas fa-file-invoice"></i></td>
+                        <td class="section-detail detail-ref">
+                            <div class="execValue exec-supplemental">
+                                <div class="execLabel">Analysis</div>
+                                <div class="links">
+                                    
+                                        <a href="#recordings" class="supplemental-link">Screen Recordings</a>
+                                        
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="execValue execLog">
+                                <div class="execLabel">Logs</div>
+                                <a href="F:\Projects\tn5250j\TN5250\output\20240408_194708\logs\nexial-20240408_194708.log" target="_nexial_link">nexial-20240408_194708.log</a><br/><a href="F:\Projects\tn5250j\TN5250\output\20240408_194708\logs\pub400.inspection.log" target="_nexial_link">pub400.inspection.log</a><br/>
+                            </div>
+                            <div class="execValue execArgs">
+                                <div class="execLabel">Runtime Args</div>
+                                <pre>-script F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx</pre>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="chart">
+            <div class="chart-container">
+                <table cellspacing="0" cellpadding="5" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td width="35%"><canvas id="resultsChart"></canvas></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="reset-buttons">
+                <span id="chartInstruction">click on the chart above to drill down</span>
+                <button id="resetResultsChart">Execution</button>&nbsp;&nbsp;
+                <button id="rollUpResultsChart">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="exec-summary">
+
+    
+
+    <div class="exec-summary-header">
+        <table cellspacing="0" cellpadding="5" border="0" width="100%">
+            <tr>
+                <th class="label label-title">Script</th>
+                <th class="label label-title">Data</th>
+                <th class="label label-iteration">Iterations</th>
+                <th class="label label-scenarioPassed">Scenario Passed</th>
+                <th class="label label-datetime exectime">Start Date/Time</th>
+                <th class="label label-time exectime">Duration</th>
+                <th class="label label-num passfail">Total</th>
+                <th class="label label-num passfail">Pass</th>
+                <th class="label label-num passfail">Fail</th>
+                <th class="label label-percent passfail" width="100%">Success %</th>
+            </tr>
+        </table>
+    </div>
+    <div class="planStep canHide" id="planStep1" >
+        <div class="showhide" target="planStep1details">
+            <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+            <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+        </div>
+
+        <div class="plan-step-summary">
+            <table cellspacing="0" cellpadding="5" border="0">
+                <tr class="hasFailure">
+                    <td class="value value-title" title="Click to download script">
+                        <a class="fileLink" href="F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx">TN5250.xlsx</a>
+                        <i class="fas fa-copy" title="copy script location" onclick="copyToClipboard(&#39;F:\\Projects\\tn5250j\\TN5250\\artifact\\script\\TN5250.xlsx&#39;)"></i>
+                    </td>
+                    <td class="value value-title" title="Click to download data">
+                        <a class="fileLink" href="F:\Projects\tn5250j\TN5250\artifact\data\TN5250.data.xlsx">TN5250.data.xlsx</a>
+                        <i class="fas fa-copy" title="copy data file location" onclick="copyToClipboard(&#39;F:\\Projects\\tn5250j\\TN5250\\artifact\\data\\TN5250.data.xlsx&#39;)"></i>
+                    </td>
+                    <td class="value value-iteration">1</td>
+                    <td class="value value-scenarioPassed">4 / 5</td>
+                    <td class="value value-datetime exectime">2024/04/08 19:47:10</td>
+                    <td class="value value-time value-tally exectime">00:02:34</td>
+                    <td class="value value-num value-tally passfail">112</td>
+                    <td class="value value-num value-tally passfail">111</td>
+                    <td class="value value-num value-tally passfail">1</td>
+                    <td class="value value-percent value-tally passfail hasFailure">99.11%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="iteration canHide" id="planStep1details">
+            <table cellspacing="0" cellpadding="5" border="0">
+                <tr class="record-header">
+                    <th class="label label-title">Iteration</th>
+                    <th class="label label-title">Scenario</th>
+                    <th class="label label-title">Activity</th>
+                    <th class="label label-scenarioPassed"></th>
+                    <th class="label label-datetime exectime">Start Date/Time</th>
+                    <th class="label label-time exectime">Duration</th>
+                    <th class="label label-num passfail">Total</th>
+                    <th class="label label-num passfail">Pass</th>
+                    <th class="label label-num passfail">Fail</th>
+                    <th class="label label-num passfail">Success %</th>
+                    <th class="label">&nbsp;</th>
+                </tr>
+
+                
+                    <tr class="record iter hasFailure">
+                        <td colspan="3" class="value value-title">
+                            <a class="fileLink" title="Click to download result" target="_nexial_link" id="TN5250.20240408_194710.001.xlsx" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\TN5250.20240408_194710.001.xlsx">Execution Result (1 of 1)</a>
+                            <i class="fas fa-copy" title="copy execution result file location" onclick="copyToClipboard(&#39;F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx&#39;)"></i>
+                            <div class="value-scriptRef">
+                                <i class="fas fa-info-circle info" title="Reference Data labeled as nexial.scriptRef.*"></i>
+                                <table cellspacing="0" cellpadding="0">
+                                    
+                                        
+                                    
+                                        
+                                            <tr>
+                                                <td class="label-ref" title="DataSheet(s)">DataSheet(s)</td>
+                                                <td class="value-ref" title="#default">#default</td>
+                                            </tr>
+                                        
+                                    
+                                        
+                                    
+                                </table>
+                            </div>
+                        </td>
+                        <td class="value value-scenarioPassed">4 / 5</td>
+                        <td class="value value-datetime exectime">2024/04/08 19:47:10</td>
+                        <td class="value value-time value-tally exectime">00:02:33</td>
+                        <td class="value value-num value-tally passfail">112</td>
+                        <td class="value value-num value-tally passfail">111</td>
+                        <td class="value value-num value-tally passfail">1</td>
+                        <td class="value value-percent value-tally passfail hasFailure">99.11%</td>
+                    </tr>
+
+                    
+                        <tr class="record scenario noFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="init">
+                                init
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2024/04/08 19:47:13</td>
+                            <td class="value value-time value-tally exectime">00:00:01</td>
+                            <td class="value value-num value-tally passfail">1</td>
+                            <td class="value value-num value-tally passfail">1</td>
+                            <td class="value value-num value-tally passfail">0</td>
+                            <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="startRecording">startRecording</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:47:13</td>
+                                <td class="value value-time exectime">00:00:01</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                        <tr class="record scenario noFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="connectAndLogin">
+                                connectAndLogin
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2024/04/08 19:47:14</td>
+                            <td class="value value-time value-tally exectime">00:00:12</td>
+                            <td class="value value-num value-tally passfail">10</td>
+                            <td class="value value-num value-tally passfail">10</td>
+                            <td class="value value-num value-tally passfail">0</td>
+                            <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="openProfile">openProfile</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:47:14</td>
+                                <td class="value value-time exectime">00:00:09</td>
+                                <td class="value value-num passfail">5</td>
+                                <td class="value value-num passfail">5</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">7</td>
+                                                <td class="value step-table-col-width-45" title="Validating the number of inputFileds in the first screen" rowspan="1">Validating the number of inputFileds in the first screen</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_connectAndLogin_A7.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="login">login</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:47:24</td>
+                                <td class="value value-time exectime">00:00:03</td>
+                                <td class="value value-num passfail">5</td>
+                                <td class="value value-num passfail">5</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">12</td>
+                                                <td class="value step-table-col-width-45" title="Entering Encrypted Password" rowspan="1">Entering Encrypted Password</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_connectAndLogin_A12.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                        <tr class="record scenario hasFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="CRUD">
+                                CRUD
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2024/04/08 19:47:27</td>
+                            <td class="value value-time value-tally exectime">00:01:33</td>
+                            <td class="value value-num value-tally passfail">52</td>
+                            <td class="value value-num value-tally passfail">51</td>
+                            <td class="value value-num value-tally passfail">1</td>
+                            <td class="value value-percent value-tally passfail hasFailure">98.08%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity hasFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="mainScreen">mainScreen</div>
+                                        <div><i class="fa execution-error-icon" onclick="toggleStepErrors(this)" title="View Errors"></i>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:47:27</td>
+                                <td class="value value-time exectime">00:00:19</td>
+                                <td class="value value-num passfail">10</td>
+                                <td class="value value-num passfail">9</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-percent passfail hasFailure">90.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">7</td>
+                                                <td class="value step-table-col-width-45" title="Validating the title of second screen" rowspan="1">Validating the title of second screen</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_CRUD_A7.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="true">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">9</td>
+                                                <td class="value step-table-col-width-45" title="Validating &quot;releases&quot; in the text" rowspan="1">Validating "releases" in the text</td>
+                                                <td class="value step-table-col-width-45 hasFailure">
+                                                    <span title="&#39;releases&#39; NOT contained in &#39;MAIN                           IBM i Main Menu                                 
+                                                            System:   PUB400   
+Select one of the following:                                                   
+                                                                               
+     1. User tasks                                                             
+     2. Office tasks                                                           
+     3. General s...&#39;">'releases' NOT contained in 'MAIN                           IBM i Main Menu                                 
+                                                            System:   PUB400   
+Select o...</span>
+                                                </td>
+                                                <td class="value step-table-col-width-5 hasFailure">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_CRUD_A9.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="listOfStudents">listOfStudents</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:47:46</td>
+                                <td class="value value-time exectime">00:00:13</td>
+                                <td class="value value-num passfail">6</td>
+                                <td class="value value-num passfail">6</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="switchToBrowser">switchToBrowser</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:48:00</td>
+                                <td class="value value-time exectime">00:00:14</td>
+                                <td class="value value-num passfail">8</td>
+                                <td class="value value-num passfail">8</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="addStudent">addStudent</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:48:14</td>
+                                <td class="value value-time exectime">00:00:18</td>
+                                <td class="value value-num passfail">11</td>
+                                <td class="value value-num passfail">11</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="updateStudentRecord">updateStudentRecord</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:48:33</td>
+                                <td class="value value-time exectime">00:00:14</td>
+                                <td class="value value-num passfail">7</td>
+                                <td class="value value-num passfail">7</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="deleteRecord">deleteRecord</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:48:47</td>
+                                <td class="value value-time exectime">00:00:12</td>
+                                <td class="value value-num passfail">10</td>
+                                <td class="value value-num passfail">10</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                        <tr class="record scenario noFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="NavigateMenuScreens">
+                                NavigateMenuScreens
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2024/04/08 19:49:01</td>
+                            <td class="value value-time value-tally exectime">00:00:40</td>
+                            <td class="value value-num value-tally passfail">47</td>
+                            <td class="value value-num value-tally passfail">47</td>
+                            <td class="value value-num value-tally passfail">0</td>
+                            <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="navigateMenuScreen">navigateMenuScreen</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:01</td>
+                                <td class="value value-time exectime">00:00:12</td>
+                                <td class="value value-num passfail">10</td>
+                                <td class="value value-num passfail">10</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">14</td>
+                                                <td class="value step-table-col-width-45" title="Inpecting the Refreshed screen" rowspan="1">Inpecting the Refreshed screen</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A14.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="saveDataAsCsv">saveDataAsCsv</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:13</td>
+                                <td class="value value-time exectime">00:00:03</td>
+                                <td class="value value-num passfail">6</td>
+                                <td class="value value-num passfail">6</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="addStudent">addStudent</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:17</td>
+                                <td class="value value-time exectime">00:00:09</td>
+                                <td class="value value-num passfail">12</td>
+                                <td class="value value-num passfail">12</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">31</td>
+                                                <td class="value step-table-col-width-45" title="Clicking on ENTER" rowspan="1">Clicking on ENTER</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A31.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="updateStudent">updateStudent</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:26</td>
+                                <td class="value value-time exectime">00:00:09</td>
+                                <td class="value value-num passfail">12</td>
+                                <td class="value value-num passfail">12</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">43</td>
+                                                <td class="value step-table-col-width-45" title="Clicking on ENTER" rowspan="1">Clicking on ENTER</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A43.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="deleteStudent">deleteStudent</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:35</td>
+                                <td class="value value-time exectime">00:00:05</td>
+                                <td class="value value-num passfail">7</td>
+                                <td class="value value-num passfail">7</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">49</td>
+                                                <td class="value step-table-col-width-45" title="Clicking on ENTER" rowspan="1">Clicking on ENTER</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A49.png">
+                                                        <i class="fas file-image-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                        <tr class="record scenario noFailure">
+                            <td class="value spacer2">&nbsp;</td>
+                            <td colspan="3" class="value value-title" title="teardown">
+                                teardown
+                                
+                            </td>
+                            <td class="value value-datetime exectime">2024/04/08 19:49:41</td>
+                            <td class="value value-time value-tally exectime">00:00:02</td>
+                            <td class="value value-num value-tally passfail">2</td>
+                            <td class="value value-num value-tally passfail">2</td>
+                            <td class="value value-num value-tally passfail">0</td>
+                            <td class="value value-percent value-tally passfail allPass">100.00%</td>
+                        </tr>
+
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    
+                                    <div><span title="CloseProfile">CloseProfile</span></div>
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:41</td>
+                                <td class="value value-time exectime">00:00:00</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                            <tr class="record activity noFailure">
+                                <td colspan="2" class="value spacer2"></td>
+                                <td colspan="2" class="value value-title">
+                                    <div class="step-icon-grid">
+                                        <div title="StopRecording">StopRecording</div>
+                                        <div>&nbsp;</div>
+                                        <div><i class="fa execution-screenshot-icon" onclick="toggleStepFiles(this)" title="View Screenshots/Files"></i></div>
+                                    </div>
+                                    
+                                </td>
+                                <td class="value value-datetime exectime">2024/04/08 19:49:42</td>
+                                <td class="value value-time exectime">00:00:02</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">1</td>
+                                <td class="value value-num passfail">0</td>
+                                <td class="value value-percent passfail allPass">100.00%</td>
+                            </tr>
+                            <tr class="record canHide step-detail-row" >
+                                <td class="spacer2"></td>
+                                <td class="spacer2"></td>
+                                <td colspan="8">
+                                    <table cellspacing="0" cellpadding="5" style="width:100%">
+                                        
+                                            <tr class="record step-detail-tr" is-step-error="false">
+                                                <td class="value step-table-col-width-5" style="text-align: right"  rowspan="1">6</td>
+                                                <td class="value step-table-col-width-45" title="stoping the recording" rowspan="1">stoping the recording</td>
+                                                <td class="value step-table-col-width-45">
+                                                    <span></span>
+                                                </td>
+                                                <td class="value step-table-col-width-5">
+                                                    <a target="_nexial_target" href="F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_init_A5.mp4">
+                                                        <i class="fas file-video-icon" title="View File"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="recording canHide" id="recordings">
+    <div class="showhide" target="all-recordings">
+        <i class="fas fa-minus-square" onclick="hideSection(this)" title="minimize this section"></i>
+        <i class="fas fa-plus-square" onclick="showSection(this)" title="restore this section"></i>
+    </div>
+
+    <div class="section-title">
+        Screen Recordings
+        <a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <div class="canHide" id="all-recordings">
+        
+            <div class="container">
+                <div class="caption">
+                    <div class="caption-title">TN5250.20240408_194710.001.xlsx_init_A5.mp4</div>
+                    <div class="caption-meta">
+                        <a class="link-to-result" href="javascript:scrollToElement(&#39;[id=\&#39;TN5250.20240408_194710.001.xlsx\&#39;]&#39;);" title="navigate to corresponding execution result"><i class="fas fa-link"></i></a>
+                        <span class="meta-title">script</span>
+                        <span class="meta-value">TN5250</span>
+                        <span class="meta-title">scenario</span>
+                        <span class="meta-value">init</span>
+                        <span class="meta-title">iteration</span>
+                        <span class="meta-value">001</span>
+                        <span class="meta-title">row</span>
+                        <span class="meta-value">A5</span>
+                    </div>
+                </div>
+                <video width="540" controls>
+                    <source src="captures/TN5250.20240408_194710.001.xlsx_init_A5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+    <div class="custom-footer"><div align="center">Copyright © 2020 Prudential Assurance Malaysia Berhad 198301012262 (107655-U). All rights reserved.</div></div>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="footer">powered by <a href="https://nexiality.github.io">NEXIAL</a></div>
+<br/>
+<br/>
+
+<button id="hideLog" target="" title="click to hide display" onclick="hideLog();">Hide</button>
+
+<div id="loadError" style="display:none;font-weight:bold;font-size:16pt;color:#800;background:rgba(230,200,200,0.9);border:5px solid;padding:25px;margin:auto;position:fixed;width:500px;height:175px;top:0;left:0;right:0;bottom:0;">
+    Unable to load one or more external web resources needed to display this page.<br/><br/>
+    Please check/adjust your Internet access and reload this page again.<br/><br/>
+    Thank you.
+</div>
+
+<script>if (loadErrorFound) { document.getElementById('loadError').style.display = 'block'; }</script>
+<script>
+   const executionChart = new ExecutionChart({"name":"20240408_194708","executionLevel":"EXECUTION","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585829625,"endTime":1712585985989,"totalLevelPassed":0,"totalSteps":112,"passCount":111,"failCount":1,"warnCount":0,"skippedCount":0,"executed":112,"customHeader":"<div class=\"wrapper\" style=\"margin: 15px;min-height:30%;overflow: auto; background-color:white;border-radius: 15px;\">\n  <div class=\"row\" style=\" display: flex;flex-direction: row;flex-wrap: wrap;width: 100%; height: 120px;\">\n    <div class=\"column\" style=\"display: flex;flex-direction: column;flex-basis: 100%;flex: 1;\">\n      <div style=\"height: 100px;margin-top: 25px;margin-right: 25px;\/* border-radius: 15px; *\/\">\n        <img src=F:\\Projects\\tn5250j\\TN5250\\artifact\\data\\prudentials.jpg alt=\"datalink\" width=\"200\">\n      <\/div>\n    <\/div>\n    <div class=\"column\" style=\"display: flex;flex-direction: column;flex-basis: 100%;flex: 4;\">\n      <div style=\"height: 100px;\/* padding: 0px; *\/\">\n        <p <=\"\" style=\"font-size: 28px;font-weight: bold;color:rgb(237, 27, 46);\">Prudentials <\/p>\n        <div class=\"columns\" style=\"display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;color:rgb(237, 27, 46);\">\n          <div class=\"column\" style=\"flex: 50%;\">\n            <h2>\n              <p style=\"font-size: 20px\">For every chapter of your life\n                Let us help you find the right solutions to take care of what\u2019s important to you and your family. <\/p>\n            <\/h2>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n  <script>\n    $('.custom-header').css('background-color', 'white')\n  <\/script>\n<\/div>","customFooter":"<div align=\"center\">Copyright \u00A9 2020 Prudential Assurance Malaysia Berhad 198301012262 (107655-U). All rights reserved.<\/div>","failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{"Data File":"TN5250.data.xlsx","DataSheet(s)":"#default","runtime args":"-script F:\\Projects\\tn5250j\\TN5250\\artifact\\script\\TN5250.xlsx"},"nestedExecutions":[{"name":"TN5250 (1)","executionLevel":"SCRIPT","scriptFile":"F:\\Projects\\tn5250j\\TN5250\\artifact\\script\\TN5250.xlsx","dataFile":"F:\\Projects\\tn5250j\\TN5250\\artifact\\data\\TN5250.data.xlsx","testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585830891,"endTime":1712585985265,"totalLevelPassed":0,"totalSteps":112,"passCount":111,"failCount":1,"warnCount":0,"skippedCount":0,"executed":112,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{},"nestedExecutions":[{"name":"1 of 1","executionLevel":"ITERATION","scriptFile":"F:\\Projects\\tn5250j\\TN5250\\artifact\\script\\TN5250.xlsx","dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585830907,"endTime":1712585984618,"totalLevelPassed":4,"totalSteps":112,"passCount":111,"failCount":1,"warnCount":0,"skippedCount":0,"executed":112,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{"Data File":"TN5250.data.xlsx","DataSheet(s)":"#default","runtime args":"-script F:\\Projects\\tn5250j\\TN5250\\artifact\\script\\TN5250.xlsx"},"nestedExecutions":[{"name":"init","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585833136,"endTime":1712585834426,"totalLevelPassed":1,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log"},"referenceData":{},"nestedExecutions":[{"name":"startRecording","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585833136,"endTime":1712585834426,"totalLevelPassed":0,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":1290,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":1290,"successRateString":"100.00%"},{"name":"connectAndLogin","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585834630,"endTime":1712585847267,"totalLevelPassed":2,"totalSteps":10,"passCount":10,"failCount":0,"warnCount":0,"skippedCount":0,"executed":10,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{},"nestedExecutions":[{"name":"openProfile","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585834630,"endTime":1712585844121,"totalLevelPassed":0,"totalSteps":5,"passCount":5,"failCount":0,"warnCount":0,"skippedCount":0,"executed":5,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Validating the number of inputFileds in the first screen,base,assertEqual(expected,actual),[2, ${pub400.screen}.inputFieldCount],<null>,true,[TN5250.20240408_194710.001.xlsx][connectAndLogin][openProfile][STEP   7][base][assertEqual(expected,actual)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":7,"description":"Validating the number of inputFileds in the first screen","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_connectAndLogin_A7.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":9491,"successRateString":"100.00%"},{"name":"login","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585844121,"endTime":1712585847267,"totalLevelPassed":0,"totalSteps":5,"passCount":5,"failCount":0,"warnCount":0,"skippedCount":0,"executed":5,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Entering Encrypted Password,tn.5250,typeKeys(keystrokes),[${pub400.password}],<null>,true,[TN5250.20240408_194710.001.xlsx][connectAndLogin][login][STEP  12][tn.5250][typeKeys(keystrokes)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":12,"description":"Entering Encrypted Password","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_connectAndLogin_A12.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":3146,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":12637,"successRateString":"100.00%"},{"name":"CRUD","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585847456,"endTime":1712585940542,"totalLevelPassed":5,"totalSteps":52,"passCount":51,"failCount":1,"warnCount":0,"skippedCount":0,"executed":52,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{},"nestedExecutions":[{"name":"mainScreen","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585847456,"endTime":1712585866772,"totalLevelPassed":0,"totalSteps":10,"passCount":9,"failCount":1,"warnCount":0,"skippedCount":0,"executed":10,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Validating the title of second screen,tn.5250,assertTitle(expects),[IBM i Main Menu],<null>,true,[TN5250.20240408_194710.001.xlsx][CRUD][mainScreen][STEP   7][tn.5250][assertTitle(expects)]":[],"Validating \"releases\" in the text,base,assertContains(text,substring),[${pub400.screen}.text, releases],<null>,false,[TN5250.20240408_194710.001.xlsx][CRUD][mainScreen][STEP   9][base][assertContains(text,substring)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":7,"description":"Validating the title of second screen","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_CRUD_A7.png","fileType":"image"}],"pass":true},{"rowNum":9,"description":"Validating \"releases\" in the text","nestedMessages":[{"message":"'releases' NOT contained in 'MAIN                           IBM i Main Menu                                 \n                                                            System:   PUB400   \nSelect one of the following:                                                   \n                                                                               \n     1. User tasks                                                             \n     2. Office tasks                                                           \n     3. General s...'","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_CRUD_A9.png","fileType":"image"}],"pass":false}],"stepDetailsHasError":true,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":0.9,"elapsedTime":19316,"successRateString":"90.00%"},{"name":"listOfStudents","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585866772,"endTime":1712585880528,"totalLevelPassed":0,"totalSteps":6,"passCount":6,"failCount":0,"warnCount":0,"skippedCount":0,"executed":6,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":13756,"successRateString":"100.00%"},{"name":"switchToBrowser","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585880528,"endTime":1712585894826,"totalLevelPassed":0,"totalSteps":8,"passCount":8,"failCount":0,"warnCount":0,"skippedCount":0,"executed":8,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":14298,"successRateString":"100.00%"},{"name":"addStudent","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585894826,"endTime":1712585913260,"totalLevelPassed":0,"totalSteps":11,"passCount":11,"failCount":0,"warnCount":0,"skippedCount":0,"executed":11,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":18434,"successRateString":"100.00%"},{"name":"updateStudentRecord","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585913260,"endTime":1712585927711,"totalLevelPassed":0,"totalSteps":7,"passCount":7,"failCount":0,"warnCount":0,"skippedCount":0,"executed":7,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":14451,"successRateString":"100.00%"},{"name":"deleteRecord","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585927711,"endTime":1712585940527,"totalLevelPassed":0,"totalSteps":10,"passCount":10,"failCount":0,"warnCount":0,"skippedCount":0,"executed":10,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":12816,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":0.9807692307692307,"elapsedTime":93086,"successRateString":"98.08%"},{"name":"NavigateMenuScreens","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585941001,"endTime":1712585981443,"totalLevelPassed":5,"totalSteps":47,"passCount":47,"failCount":0,"warnCount":0,"skippedCount":0,"executed":47,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{},"nestedExecutions":[{"name":"navigateMenuScreen","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585941001,"endTime":1712585953367,"totalLevelPassed":0,"totalSteps":10,"passCount":10,"failCount":0,"warnCount":0,"skippedCount":0,"executed":10,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Inpecting the Refreshed screen,tn.5250,inspectScreen(),[],<null>,true,[TN5250.20240408_194710.001.xlsx][NavigateMenuScreens][navigateMenuScreen][STEP  14][tn.5250][inspectScreen()]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":14,"description":"Inpecting the Refreshed screen","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A14.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":12366,"successRateString":"100.00%"},{"name":"saveDataAsCsv","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585953367,"endTime":1712585957255,"totalLevelPassed":0,"totalSteps":6,"passCount":6,"failCount":0,"warnCount":0,"skippedCount":0,"executed":6,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":3888,"successRateString":"100.00%"},{"name":"addStudent","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585957255,"endTime":1712585966372,"totalLevelPassed":0,"totalSteps":12,"passCount":12,"failCount":0,"warnCount":0,"skippedCount":0,"executed":12,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Clicking on ENTER,tn.5250,typeKeys(keystrokes),[{ENTER}],<null>,true,[TN5250.20240408_194710.001.xlsx][NavigateMenuScreens][addStudent][STEP  31][tn.5250][typeKeys(keystrokes)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":31,"description":"Clicking on ENTER","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A31.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":9117,"successRateString":"100.00%"},{"name":"updateStudent","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585966372,"endTime":1712585975483,"totalLevelPassed":0,"totalSteps":12,"passCount":12,"failCount":0,"warnCount":0,"skippedCount":0,"executed":12,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Clicking on ENTER,tn.5250,typeKeys(keystrokes),[{ENTER}],<null>,true,[TN5250.20240408_194710.001.xlsx][NavigateMenuScreens][updateStudent][STEP  43][tn.5250][typeKeys(keystrokes)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":43,"description":"Clicking on ENTER","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A43.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":9111,"successRateString":"100.00%"},{"name":"deleteStudent","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585975483,"endTime":1712585981442,"totalLevelPassed":0,"totalSteps":7,"passCount":7,"failCount":0,"warnCount":0,"skippedCount":0,"executed":7,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"Clicking on ENTER,tn.5250,typeKeys(keystrokes),[{ENTER}],<null>,true,[TN5250.20240408_194710.001.xlsx][NavigateMenuScreens][deleteStudent][STEP  49][tn.5250][typeKeys(keystrokes)]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":49,"description":"Clicking on ENTER","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_NavigateMenuScreens_A49.png","fileType":"image"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":5959,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":40442,"successRateString":"100.00%"},{"name":"teardown","executionLevel":"SCENARIO","scriptFile":null,"dataFile":null,"testScript":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\TN5250.20240408_194710.001.xlsx","testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585981663,"endTime":1712585984476,"totalLevelPassed":2,"totalSteps":2,"passCount":2,"failCount":0,"warnCount":0,"skippedCount":0,"executed":2,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","logs":{"nexial-20240408_194708.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\nexial-20240408_194708.log","pub400.inspection.log":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\logs\\pub400.inspection.log"},"referenceData":{},"nestedExecutions":[{"name":"CloseProfile","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585981663,"endTime":1712585982461,"totalLevelPassed":0,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":798,"successRateString":"100.00%"},{"name":"StopRecording","executionLevel":"ACTIVITY","scriptFile":null,"dataFile":null,"testScript":null,"testScriptLink":null,"runHost":"ALIPL3204","runHostOs":"amd64 Windows 11 10.0","runUser":"AL5171","triggerUser":"","triggerUrl":"","triggerId":"","startTime":1712585982462,"endTime":1712585984476,"totalLevelPassed":0,"totalSteps":1,"passCount":1,"failCount":0,"warnCount":0,"skippedCount":0,"executed":1,"customHeader":null,"customFooter":null,"failedFast":false,"errorStackTrace":null,"error":null,"executionLog":null,"logs":{},"referenceData":{},"nestedExecutions":[],"nestMessages":{"stoping the recording,base,stopRecording(),[],<null>,false,[TN5250.20240408_194710.001.xlsx][teardown][StopRecording][STEP   6][base][stopRecording()]":[]},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[{"rowNum":6,"description":"stoping the recording","nestedMessages":[{"message":"","file":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\TN5250.20240408_194710.001.xlsx_init_A5.mp4","fileType":"video"}],"pass":true}],"stepDetailsHasError":false,"stepDetailsHasLinks":true,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":2014,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":1.0,"elapsedTime":2813,"successRateString":"100.00%"}],"nestMessages":{},"planSequence":0,"iterationIndex":1,"iterationTotal":1,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":0.9910714285714286,"elapsedTime":153711,"successRateString":"99.11%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":1,"planName":null,"planFile":null,"planDescription":"Started on 04\/08\/2024 07:47:09 PM from ALIPL3204 via user AL5171","screenRecordings":null,"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":0.9910714285714286,"elapsedTime":154374,"successRateString":"99.11%"}],"nestMessages":{},"planSequence":0,"iterationIndex":0,"iterationTotal":0,"planName":null,"planFile":null,"planDescription":null,"screenRecordings":{"captures\/TN5250.20240408_194710.001.xlsx_init_A5.mp4":{"path":"F:\\Projects\\tn5250j\\TN5250\\output\\20240408_194708\\captures\\","repeatUntilLoopIndex":"","file":"TN5250.20240408_194710.001.xlsx_init_A5.mp4","filename":"TN5250.20240408_194710.001","planStep":"","scenario":"init","planName":"","iteration":"001","row":"A5","script":"TN5250"}},"wsLogs":null,"stepDetails":[],"stepDetailsHasError":false,"stepDetailsHasLinks":false,"manifest":"nexial-core dev_0000","successRate":0.9910714285714286,"elapsedTime":156364,"successRateString":"99.11%"});
+   executionChart.initializeChart();
+</script>
+
+
+</body>
+</html>

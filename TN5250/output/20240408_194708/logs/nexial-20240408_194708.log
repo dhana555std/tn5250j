@@ -1,0 +1,385 @@
+2024-04-08 19:47:09.838|I|Thread-1|(DELAYED) nexial-core dev_0000 starting up...
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) data file resolved as C:\Users\al5171\tmp\PBLKe\TN5250.data.xlsx
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) input files and output directory resolved...
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) cleaning up outdated temp files...
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) No predefined nexial-setup found
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) re-fetching data from F:\Projects\tn5250j\TN5250\artifact\data\TN5250.data.xlsx
+2024-04-08 19:47:09.854|I|Thread-1|(DELAYED) [20240408_194708] [F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx] resolve RUN ID as 20240408_194708
+2024-04-08 19:47:09.866|I|Thread-1|(DELAYED) [20240408_194708] [F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx] new thread started
+2024-04-08 19:47:09.866|I|Thread-1|No predefined nexial-setup found
+2024-04-08 19:47:10.263|I|Thread-1|outputBase not set; output-to-cloud DISABLED!
+2024-04-08 19:47:10.263|I|Thread-1|accessKey not set; output-to-cloud DISABLED!
+2024-04-08 19:47:10.263|I|Thread-1|secretKey not set; output-to-cloud DISABLED!
+2024-04-08 19:47:10.467|I|Thread-1|missing REQUIRED configuration; sms DISABLED!
+2024-04-08 19:47:10.891|I|Thread-1|On-Demand Inspection detection enabled
+2024-04-08 19:47:10.891|I|Thread-1|[20240408_194708] executing F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx with 1 iteration(s)
+2024-04-08 19:47:10.907|I|Thread-1|[20240408_194708] create directory F:\Projects\tn5250j\TN5250\output\20240408_194708\captures
+2024-04-08 19:47:10.907|I|Thread-1|[20240408_194708] create directory F:\Projects\tn5250j\TN5250\output\20240408_194708\logs
+2024-04-08 19:47:11.205|I|Thread-1|[20240408_194708] merging test data to tmp file F:\Projects\tn5250j\TN5250\output\20240408_194708\TN5250.20240408_194710.001.xlsx
+2024-04-08 19:47:11.205|I|Thread-1|re-fetching data from F:\Projects\tn5250j\TN5250\artifact\data\TN5250.data.xlsx
+2024-04-08 19:47:11.456|I|Thread-1|[20240408_194708] test script and test data merged to F:\Projects\tn5250j\TN5250\output\20240408_194708\TN5250.20240408_194710.001.xlsx
+2024-04-08 19:47:12.042|I|Thread-1|STARTS
+2024-04-08 19:47:13.136|I|Thread-1|resolving WPS Spreadsheet as 'C:\Users\al5171\AppData\Local\Kingsoft\WPS Office\12.2.0.13489\office6\et.exe
+2024-04-08 19:47:13.136|I|Thread-1|TN5250.20240408_194710.001 - executing iteration #1 of 1; Iteration Id 1
+2024-04-08 19:47:13.136|I|Thread-1|TN5250.20240408_194710.001|init - executing test scenario
+2024-04-08 19:47:13.136|I|Thread-1|TN5250.20240408_194710.001|init|startRecording - executing activity
+2024-04-08 19:47:13.152|I|Thread-1|TN5250.20240408_194710.001|init|startRecording|#  5|base.startRecording()     - executing startRecording()()
+2024-04-08 19:47:13.812|I|Thread-1|[ROW 5] start recording to 'F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_init_A5.mp4'
+2024-04-08 19:47:14.426|I|Thread-1|TN5250.20240408_194710.001|init|startRecording|#  5|base.startRecording()     - PASS desktop recording started; saved F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_init_A5.mp4
+2024-04-08 19:47:14.426|I|Thread-1|TN5250.20240408_194710.001|init|startRecording - ending activity
+2024-04-08 19:47:14.489|I|Thread-1|[TN5250.20240408_194710.001|init] saving test scenario
+2024-04-08 19:47:14.630|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin - executing test scenario
+2024-04-08 19:47:14.630|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile - executing activity
+2024-04-08 19:47:14.630|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  5|tn.5250.open(profile)     - executing open(profile)(pub400)
+2024-04-08 19:47:15.243|I|Thread-1|switching current TN5250 profile to 'pub400'
+2024-04-08 19:47:19.913|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  5|tn.5250.open(profile)     - PASS TN5250 session 'pub400' started
+2024-04-08 19:47:19.913|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  6|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:47:22.037|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  6|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 2 input fields
+2024-04-08 19:47:22.037|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  7|base.assertEqual(expected - executing assertEqual(expected,actual)(2, ${pub400.screen}.inputFieldCount)
+2024-04-08 19:47:22.872|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  7|base.assertEqual(expected - PASS validated EXPECTED = ACTUAL; '2' = '2'
+2024-04-08 19:47:22.888|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  8|base.assertContains(text, - executing assertContains(text,substring)(${pub400.screen}.text, Your user name:)
+2024-04-08 19:47:23.509|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  8|base.assertContains(text, - PASS validated text '        Welcome to PUB400.COM * your public IBM i server                       
+                                              Server name . . . :   PUB400     
+                                              Subsystem . . . . :   QINTER     
+                                              Display name. . . :   PUB400.RZK 
+Your user name:                                                                 
+Password (max. 128):                                                            
+               ...' contains 'Your user name:'
+2024-04-08 19:47:23.509|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  9|tn.5250.assertMessageMatc - executing assertMessageMatch(expects)((C) COPYRIGHT IBM CORP. 1980, 2021.)
+2024-04-08 19:47:24.121|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile|#  9|tn.5250.assertMessageMatc - PASS Screen message equals to '(C) COPYRIGHT IBM CORP. 1980, 2021.'
+2024-04-08 19:47:24.121|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|openProfile - ending activity
+2024-04-08 19:47:24.121|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login - executing activity
+2024-04-08 19:47:24.121|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 10|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${pub400.username})
+2024-04-08 19:47:24.751|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 10|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:24.751|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 11|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:47:25.358|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 11|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:25.374|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 12|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${pub400.password})
+2024-04-08 19:47:26.016|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 12|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:26.016|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 13|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:47:26.637|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 13|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:26.637|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 14|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F12})
+2024-04-08 19:47:27.267|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login|# 14|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:27.267|I|Thread-1|TN5250.20240408_194710.001|connectAndLogin|login - ending activity
+2024-04-08 19:47:27.330|I|Thread-1|[TN5250.20240408_194710.001|connectAndLogin] saving test scenario
+2024-04-08 19:47:27.456|I|Thread-1|TN5250.20240408_194710.001|CRUD - executing test scenario
+2024-04-08 19:47:27.456|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen - executing activity
+2024-04-08 19:47:27.456|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  5|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:47:29.580|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  5|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 0 input fields
+2024-04-08 19:47:29.580|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  6|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:47:35.199|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  6|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:47:35.199|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  7|tn.5250.assertTitle(expec - executing assertTitle(expects)(IBM i Main Menu)
+2024-04-08 19:47:35.844|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  7|tn.5250.assertTitle(expec - PASS Title equals to 'IBM i Main Menu'
+2024-04-08 19:47:35.859|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  8|tn.5250.assertMessageMatc - executing assertMessageMatch(expects)((C) COPYRIGHT IBM CORP. 1980, 2021.)
+2024-04-08 19:47:36.472|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  8|tn.5250.assertMessageMatc - PASS Screen message equals to '(C) COPYRIGHT IBM CORP. 1980, 2021.'
+2024-04-08 19:47:36.472|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  9|base.assertContains(text, - executing assertContains(text,substring)(${pub400.screen}.text, releases)
+2024-04-08 19:47:37.117|E|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|#  9|base.assertContains(text, - FAIL 'releases' NOT contained in 'MAIN                           IBM i Main Menu                                 
+                                                            System:   PUB400   
+Select one of the following:                                                   
+                                                                               
+     1. User tasks                                                             
+     2. Office tasks                                                           
+     3. General s...'
+2024-04-08 19:47:37.117|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 10|base.assertEqual(expected - executing assertEqual(expected,actual)(PUB400, ${pub400.screen}.fieldValue[System])
+2024-04-08 19:47:37.765|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 10|base.assertEqual(expected - PASS validated EXPECTED = ACTUAL; 'PUB400' = 'PUB400'
+2024-04-08 19:47:37.765|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 11|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${strsql})
+2024-04-08 19:47:38.396|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 11|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:38.396|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 12|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:47:39.025|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 12|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:39.025|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 13|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:47:41.150|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 13|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 16 input fields
+2024-04-08 19:47:41.150|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 14|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:47:46.772|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen|# 14|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:47:46.772|I|Thread-1|TN5250.20240408_194710.001|CRUD|mainScreen - ending activity
+2024-04-08 19:47:46.772|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents - executing activity
+2024-04-08 19:47:46.772|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 15|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${getListOfStudents})
+2024-04-08 19:47:47.403|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 15|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:47.403|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 16|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:47:48.033|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 16|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:47:48.033|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 17|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:47:53.653|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 17|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:47:53.653|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 18|tn.5250.saveScreenText(va - executing saveScreenText(var)(table)
+2024-04-08 19:47:54.267|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 18|tn.5250.saveScreenText(va - PASS 
+2024-04-08 19:47:54.267|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 19|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:47:59.896|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 19|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:47:59.896|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 20|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:00.528|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents|# 20|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:00.528|I|Thread-1|TN5250.20240408_194710.001|CRUD|listOfStudents - ending activity
+2024-04-08 19:48:00.528|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser - executing activity
+2024-04-08 19:48:00.528|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 21|base.substringBetween(tex - executing substringBetween(text,start,end,saveVar)(${table}, JNTU, 2, college)
+2024-04-08 19:48:01.174|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 21|base.substringBetween(tex - PASS substring '       https://jntuh.ac.in/                    
+       ' stored to ${college}
+2024-04-08 19:48:01.190|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 22|base.save(var,value)      - executing save(var,value)(extractedcollegeUrl, [TEXT(${college}) => trim])
+2024-04-08 19:48:01.821|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 22|base.save(var,value)      - PASS stored 'https://jntuh.ac.in/' as ${extractedcollegeUrl}
+2024-04-08 19:48:01.821|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 23|web.open(url)             - executing open(url)(${extractedcollegeUrl})
+2024-04-08 19:48:01.837|I|Thread-1|[chrome] initializing chrome
+2024-04-08 19:48:01.855|I|Thread-1|[chrome] enabling chrome remote port: 3540
+2024-04-08 19:48:03.843|I|Thread-1|[chrome] initializing for chrome 123.0.6312.86
+2024-04-08 19:48:03.974|I|Thread-1|[DISPLAY] Currently discovered display(s):
+2024-04-08 19:48:03.985|I|Thread-1|	1920x1080x32bpp@60Hz
+2024-04-08 19:48:03.987|I|Thread-1|[DISPLAY] adjust position to display 1920x1080x32bpp@60Hz
+2024-04-08 19:48:03.998|I|Thread-1|[DISPLAY] adjusting position within the bounds of target display: x=0,y=0,width=1280,height=720
+2024-04-08 19:48:03.998|I|Thread-1|[DISPLAY] position adjusted to (640, 250)
+2024-04-08 19:48:04.126|I|Thread-1|[chrome] browser initialization completed for 'chrome'
+2024-04-08 19:48:04.126|I|Thread-1|[chrome] setting browser page load timeout to 15000 ms
+2024-04-08 19:48:04.126|I|Thread-1|[chrome] detected nexial.web.alwaysWait; use fluent-wait (up to 1500 ms) during web automation
+2024-04-08 19:48:08.397|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 23|web.open(url)             - PASS opened URL https://jntuh.ac.in/
+2024-04-08 19:48:08.400|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 24|web.saveLocation(var)     - executing saveLocation(var)(currentUrl)
+2024-04-08 19:48:09.068|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 24|web.saveLocation(var)     - PASS stored current URL as ${currentUrl}
+2024-04-08 19:48:09.068|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 25|web.close()               - executing close()()
+2024-04-08 19:48:11.909|I|Thread-1|[chrome] Shutting down webdriver...
+2024-04-08 19:48:11.909|I|Thread-1|[chrome] Close the current window...
+2024-04-08 19:48:11.909|I|Thread-1|[chrome] Quit this driver, closing every associated window.
+2024-04-08 19:48:12.951|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 25|web.close()               - PASS closed last tab/window
+2024-04-08 19:48:12.952|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 26|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:13.578|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 26|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:13.578|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 27|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(3)
+2024-04-08 19:48:14.209|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 27|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:14.209|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 28|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:14.826|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser|# 28|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:14.826|I|Thread-1|TN5250.20240408_194710.001|CRUD|switchToBrowser - ending activity
+2024-04-08 19:48:14.826|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent - executing activity
+2024-04-08 19:48:14.840|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 29|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${addStudent})
+2024-04-08 19:48:15.471|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 29|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:15.471|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 30|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:16.106|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 30|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:16.106|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 31|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:48:21.740|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 31|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:48:21.740|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 32|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:22.370|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 32|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:22.370|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 33|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:48:24.497|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 33|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 1 input fields
+2024-04-08 19:48:24.497|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 34|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(3)
+2024-04-08 19:48:25.130|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 34|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:25.130|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 35|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:25.760|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 35|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:25.760|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 36|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${getListOfStudents})
+2024-04-08 19:48:26.379|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 36|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:26.379|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 37|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:27.004|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 37|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:27.004|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 38|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:48:32.630|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 38|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:48:32.630|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 39|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:33.260|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent|# 39|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:33.260|I|Thread-1|TN5250.20240408_194710.001|CRUD|addStudent - ending activity
+2024-04-08 19:48:33.260|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord - executing activity
+2024-04-08 19:48:33.260|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 40|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${updateStudent})
+2024-04-08 19:48:33.906|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 40|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:33.906|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 41|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:34.535|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 41|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:34.535|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 42|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:48:40.178|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 42|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:48:40.180|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 43|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${getListOfStudents})
+2024-04-08 19:48:40.824|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 43|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:40.824|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 44|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:41.453|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 44|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:41.453|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 45|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:42.093|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 45|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:42.093|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 46|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:48:47.711|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord|# 46|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:48:47.711|I|Thread-1|TN5250.20240408_194710.001|CRUD|updateStudentRecord - ending activity
+2024-04-08 19:48:47.711|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord - executing activity
+2024-04-08 19:48:47.711|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 47|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${deleteStudent})
+2024-04-08 19:48:48.358|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 47|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:48.358|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 48|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:48.974|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 48|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:48.989|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 49|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:48:51.119|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 49|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 6 input fields
+2024-04-08 19:48:51.119|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 50|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${getListOfStudents})
+2024-04-08 19:48:51.751|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 50|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:51.751|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 51|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:48:52.382|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 51|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:52.382|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 52|base.waitFor(waitMs)      - executing waitFor(waitMs)(${wait})
+2024-04-08 19:48:58.009|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 52|base.waitFor(waitMs)      - PASS 
+2024-04-08 19:48:58.009|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 53|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:58.624|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 53|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:58.638|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 54|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:48:59.269|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 54|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:59.284|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 55|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(2)
+2024-04-08 19:48:59.913|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 55|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:48:59.913|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 56|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:00.527|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord|# 56|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:00.542|I|Thread-1|TN5250.20240408_194710.001|CRUD|deleteRecord - ending activity
+2024-04-08 19:49:00.843|I|Thread-1|[TN5250.20240408_194710.001|CRUD] saving test scenario
+2024-04-08 19:49:01.001|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens - executing test scenario
+2024-04-08 19:49:01.001|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen - executing activity
+2024-04-08 19:49:01.001|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  5|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:03.124|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  5|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 0 input fields
+2024-04-08 19:49:03.124|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  6|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(9)
+2024-04-08 19:49:03.751|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  6|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:03.751|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  7|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:04.379|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  7|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:04.379|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  8|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:06.499|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  8|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 3 input fields
+2024-04-08 19:49:06.499|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  9|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${menu})
+2024-04-08 19:49:07.128|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|#  9|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:07.128|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 10|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:07.755|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 10|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:07.755|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 11|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:09.888|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 11|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 1 input fields
+2024-04-08 19:49:09.888|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 12|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(1)
+2024-04-08 19:49:10.530|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 12|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:10.530|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 13|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:11.177|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 13|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:11.177|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 14|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:13.367|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen|# 14|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 2 input fields
+2024-04-08 19:49:13.367|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|navigateMenuScreen - ending activity
+2024-04-08 19:49:13.367|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv - executing activity
+2024-04-08 19:49:13.367|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 15|tn.5250.saveScreenText(va - executing saveScreenText(var)(listofstudents)
+2024-04-08 19:49:13.971|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 15|tn.5250.saveScreenText(va - PASS 
+2024-04-08 19:49:13.971|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 16|base.save(var,value)      - executing save(var,value)(start, ${stringStart})
+2024-04-08 19:49:14.598|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 16|base.save(var,value)      - PASS stored '....+....1....+....2....+....3....+....4....+....5....+....6....+....7..' as ${start}
+2024-04-08 19:49:14.598|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 17|base.save(var,value)      - executing save(var,value)(end, ${stringEnd})
+2024-04-08 19:49:15.232|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 17|base.save(var,value)      - PASS stored '****** ********  End of report  ********' as ${end}
+2024-04-08 19:49:15.232|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 18|base.save(var,value)      - executing save(var,value)(header, [TEXT(${listofstudents}) => between(${start},00000) removeLines(BLANK:true) trim replace(  ,\,) save($(syspath|out|fullpath)/op.csv)])
+2024-04-08 19:49:15.850|I|Thread-1|content saved to 'F:\Projects\tn5250j\TN5250\output\20240408_194708\op.csv'
+2024-04-08 19:49:15.913|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 18|base.save(var,value)      - PASS stored 'STUDENT ID,STUDENT NAME,COLLEGE NAME,COLLEGE URL' as ${header}
+2024-04-08 19:49:15.913|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 19|base.save(var,value)      - executing save(var,value)(data, [TEXT(${listofstudents}) => between(${start},${end}) removeLines(CONTAIN:STUDENT)  removeLines(BLANK:true) csv(14,20,36,47) removeColumns(0) save($(syspath|out|fullpath)/op.csv,true)])
+2024-04-08 19:49:16.576|I|Thread-1|content appended to 'F:\Projects\tn5250j\TN5250\output\20240408_194708\op.csv'
+2024-04-08 19:49:16.623|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 19|base.save(var,value)      - PASS stored '1,Harika,JNTU,https://jntuh.ac.in/
+2,Shiva,KITS,https://nagpuruniversity.ac.in/
+3,Priya,KITS,https://nagpuruniversity.ac.in/' as ${data}
+2024-04-08 19:49:16.623|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 20|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:49:17.255|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv|# 20|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:17.255|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|saveDataAsCsv - ending activity
+2024-04-08 19:49:17.255|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent - executing activity
+2024-04-08 19:49:17.255|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 21|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:19.377|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 21|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 1 input fields
+2024-04-08 19:49:19.377|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 22|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(2)
+2024-04-08 19:49:20.004|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 22|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:20.004|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 23|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:20.627|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 23|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:20.627|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 24|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${studentId})
+2024-04-08 19:49:21.257|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 24|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:21.257|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 25|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:21.905|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 25|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:21.905|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 26|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${studentName})
+2024-04-08 19:49:22.535|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 26|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:22.535|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 27|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:23.168|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 27|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:23.168|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 28|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${collegeName})
+2024-04-08 19:49:23.801|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 28|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:23.801|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 29|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:24.430|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 29|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:24.430|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 30|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${collegeUrl})
+2024-04-08 19:49:25.052|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 30|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:25.052|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 31|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:25.725|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 31|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:25.740|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 32|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:49:26.372|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent|# 32|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:26.372|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|addStudent - ending activity
+2024-04-08 19:49:26.372|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent - executing activity
+2024-04-08 19:49:26.372|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 33|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:28.497|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 33|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 4 input fields
+2024-04-08 19:49:28.497|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 34|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(3)
+2024-04-08 19:49:29.126|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 34|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:29.126|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 35|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:29.755|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 35|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:29.755|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 36|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${studentId})
+2024-04-08 19:49:30.387|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 36|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:30.387|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 37|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:31.015|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 37|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:31.015|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 38|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${updatedStudentName})
+2024-04-08 19:49:31.645|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 38|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:31.645|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 39|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:32.291|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 39|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:32.291|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 40|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${collegeName})
+2024-04-08 19:49:32.920|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 40|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:32.920|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 41|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({TAB})
+2024-04-08 19:49:33.548|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 41|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:33.548|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 42|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${collegeUrl})
+2024-04-08 19:49:34.164|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 42|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:34.164|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 43|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:34.856|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 43|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:34.856|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 44|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:49:35.483|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent|# 44|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:35.483|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|updateStudent - ending activity
+2024-04-08 19:49:35.483|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent - executing activity
+2024-04-08 19:49:35.483|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 45|tn.5250.inspectScreen()   - executing inspectScreen()()
+2024-04-08 19:49:37.609|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 45|tn.5250.inspectScreen()   - PASS Inspected TN5250 session 'pub400'; 1 input fields
+2024-04-08 19:49:37.609|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 46|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(4)
+2024-04-08 19:49:38.223|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 46|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:38.223|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 47|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:38.855|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 47|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:38.855|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 48|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)(${studentId})
+2024-04-08 19:49:39.485|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 48|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:39.485|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 49|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({ENTER})
+2024-04-08 19:49:40.166|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 49|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:40.166|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 50|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:49:40.796|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 50|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:40.796|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 51|tn.5250.typeKeys(keystrok - executing typeKeys(keystrokes)({F3})
+2024-04-08 19:49:41.441|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent|# 51|tn.5250.typeKeys(keystrok - PASS TN5250 session 'pub400' processed key event
+2024-04-08 19:49:41.442|I|Thread-1|TN5250.20240408_194710.001|NavigateMenuScreens|deleteStudent - ending activity
+2024-04-08 19:49:41.508|I|Thread-1|[TN5250.20240408_194710.001|NavigateMenuScreens] saving test scenario
+2024-04-08 19:49:41.661|I|Thread-1|TN5250.20240408_194710.001|teardown - executing test scenario
+2024-04-08 19:49:41.663|I|Thread-1|TN5250.20240408_194710.001|teardown|CloseProfile - executing activity
+2024-04-08 19:49:41.663|I|Thread-1|TN5250.20240408_194710.001|teardown|CloseProfile|#  5|tn.5250.close(profile)    - executing close(profile)(pub400)
+2024-04-08 19:49:42.331|W|Thread-8|   vt thread interrupted and stopping 
+2024-04-08 19:49:42.331|W|Thread-7|   DataStreamProducer thread interrupted and stopping Socket closed
+2024-04-08 19:49:42.457|I|Thread-1|TN5250.20240408_194710.001|teardown|CloseProfile|#  5|tn.5250.close(profile)    - PASS TN5250 session 'pub400' closed
+2024-04-08 19:49:42.461|I|Thread-1|TN5250.20240408_194710.001|teardown|CloseProfile - ending activity
+2024-04-08 19:49:42.462|I|Thread-1|TN5250.20240408_194710.001|teardown|StopRecording - executing activity
+2024-04-08 19:49:42.465|I|Thread-1|TN5250.20240408_194710.001|teardown|StopRecording|#  6|base.stopRecording()      - executing stopRecording()()
+2024-04-08 19:49:43.071|I|Thread-1|stopping currently in-progress desktop recording...
+2024-04-08 19:49:44.081|I|Thread-1|stopping screen recording service...
+2024-04-08 19:49:44.476|I|Thread-1|TN5250.20240408_194710.001|teardown|StopRecording|#  6|base.stopRecording()      - PASS previous desktop recording saved and is accessible via F:\Projects\tn5250j\TN5250\output\20240408_194708\captures\TN5250.20240408_194710.001.xlsx_init_A5.mp4
+2024-04-08 19:49:44.476|I|Thread-1|TN5250.20240408_194710.001|teardown|StopRecording - ending activity
+2024-04-08 19:49:44.508|I|Thread-1|[TN5250.20240408_194710.001|teardown] saving test scenario
+2024-04-08 19:49:44.618|I|Thread-1|[20240408_194708] 
+/-ITERATION COMPLETE------------------------------------------------------------
+| Test Output:    F:\Projects\tn5250j\TN5250\output\20240408_194708\TN5250.20240408_194710.001.xlsx
+| Iteration:      1
+\-------------------------------------------------------------------------------
+» Execution Time: 151466 ms
+» Test Steps:     112
+» Error(s):       1
+
+
+
+2024-04-08 19:49:45.281|I|Thread-1|[20240408_194708] 
+/-SCRIPT COMPLETE---------------------------------------------------------------
+| Test Script:    F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx
+\-------------------------------------------------------------------------------
+» Execution Time: 155560 ms
+» Iterations:     [1] total 1
+» Test Steps:     112
+» Passed:         111
+» Error(s):       1
+» Iteration 1 of 1: F:\Projects\tn5250j\TN5250\output\20240408_194708\TN5250.20240408_194710.001.xlsx
+
+
+
+2024-04-08 19:49:45.281|I|Thread-1|nexial mailer not enabled: nexial.enableEmail=false
+2024-04-08 19:49:45.989|I|main|[20240408_194708] [F:\Projects\tn5250j\TN5250\artifact\script\TN5250.xlsx] now completed
+2024-04-08 19:49:45.989|I|main|[20240408_194708] all execution thread(s) have terminated
+2024-04-08 19:49:45.989|I|main|[20240408_194708] test run completed in about 157 seconds
+2024-04-08 19:49:46.101|I|main|No predefined nexial-setup found
+2024-04-08 19:49:46.135|I|main|outputBase not set; output-to-cloud DISABLED!
+2024-04-08 19:49:46.135|I|main|accessKey not set; output-to-cloud DISABLED!
+2024-04-08 19:49:46.135|I|main|secretKey not set; output-to-cloud DISABLED!
+2024-04-08 19:49:46.135|I|main|generating HTML output for this execution to F:\Projects\tn5250j\TN5250\output\20240408_194708\execution-output.html
+2024-04-08 19:49:47.269|I|main|generating JUnit XML output for this execution to F:\Projects\tn5250j\TN5250\output\20240408_194708\junit.xml
+2024-04-08 19:49:47.347|I|main|generated the JUnit report for this execution: F:\Projects\tn5250j\TN5250\output\20240408_194708\junit.xml
+2024-04-08 19:49:47.363|I|main|nexial mailer not enabled: nexial.enableEmail=false
+2024-04-08 19:49:47.363|I|main|skipped email notification as configured
+2024-04-08 19:49:47.363|I|main|exiting current script/plan execution
+2024-04-08 19:49:47.363|I|main|exiting Nexial...
+2024-04-08 19:49:47.363|I|main|shutdown starts...
+2024-04-08 19:49:47.363|I|main|stopping screen recording service...
+2024-04-08 19:49:47.363|I|main|shutdown ends...
+2024-04-08 19:49:47.363|I|main|
+
+/-END OF EXECUTION--------------------------------------------------------------
+| » Execution Time: 156 sec.
+| » Test Steps....: 112
+| » Passed........: 111
+| » Failed........: 1
+| » Success Rate..: 99.11%
+\----------------------------------------------------------nexial-core dev_0000-
+
+2024-04-08 19:49:47.363|E|main|failure found; success rate is 99.11%
+2024-04-08 19:49:47.379|I|main|End of Execution:
+NEXIAL_OUTPUT:         F:\Projects\tn5250j\TN5250\output\20240408_194708
+NEXIAL_EXECUTION_HTML: F:\Projects\tn5250j\TN5250\output\20240408_194708\execution-output.html
+NEXIAL_JUNIT_XML:      F:\Projects\tn5250j\TN5250\output\20240408_194708\junit.xml
+NEXIAL_SUCCESS_RATE:   99.11%
+NEXIAL_EXIT_STATUS:    -13
